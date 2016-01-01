@@ -1,5 +1,5 @@
-function bitimize(byte){
-  var curr, prev, start = true, bit_count = 1, output = "";
+function bitify(byte){
+  var curr, prev, start = false, bit_count = 1, output = "";
   byte = byte + " ";
   for(var i = 0; i < byte.length; i ++){
 	curr = byte.charAt(i);
@@ -18,7 +18,7 @@ function bitimize(byte){
 	  }
 	  
 	} else {
-	  start = false;
+	  start = true;
 	}
 	
 	prev = curr;
