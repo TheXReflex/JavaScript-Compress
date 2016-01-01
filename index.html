@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Example compression </title>
+  </head>
+  <body>
+    <script src=""></script>
+    <script>
+      var binary = "00000000 00001111 00000000 00000000 00000000", 
+          CHAR_BIT = 8,
+          method = 1;
+      
+      if(bitify(binary).length < compress(binary)){
+        method = 1;
+        console.log("Used method: " + method, "Output: \n", bitify(binary));
+      } else {
+        method = 2;
+        console.log("Used method: " + method, "Output: \n", compress(binary));
+      }
+      
+    </script>
+  </body>
+</html>
